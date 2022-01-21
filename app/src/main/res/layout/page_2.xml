@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/reg_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mail"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:id="@+id/reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="confirm password"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/registrationB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:onClick="registration"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|left"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/left_down_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Log in"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
